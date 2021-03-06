@@ -16,7 +16,7 @@ namespace _2C2P_Test
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Test2C2P", action = "UploadFile", id = UrlParameter.Optional }
             );
         }
     }

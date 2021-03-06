@@ -77,3 +77,7 @@ D:\Work\tmp\2C2P_Test\2C2P_Test\obj\Debug\2C2P_Test.csproj.CoreCompileInputs.cac
 D:\Work\tmp\2C2P_Test\2C2P_Test\obj\Debug\2C2P_Test.csproj.CopyComplete
 D:\Work\tmp\2C2P_Test\2C2P_Test\obj\Debug\2C2P_Test.dll
 D:\Work\tmp\2C2P_Test\2C2P_Test\obj\Debug\2C2P_Test.pdb
+D:\Work\tmp\2C2P_Test\2C2P_Test\bin\System.Net.Http.Formatting.dll
+D:\Work\tmp\2C2P_Test\2C2P_Test\bin\System.Web.Http.dll
+D:\Work\tmp\2C2P_Test\2C2P_Test\bin\System.Net.Http.Formatting.xml
+D:\Work\tmp\2C2P_Test\2C2P_Test\bin\System.Web.Http.xml

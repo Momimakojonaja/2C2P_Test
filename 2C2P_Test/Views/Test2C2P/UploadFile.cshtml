@@ -1,0 +1,49 @@
+﻿@*@model _2C2P_Test.Models.TransactionModel*@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UploadFile</title>
+</head>
+<body>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    @using (Html.BeginForm("UploadFile", "Test2C2P", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>Upload File</h4>
+            <hr />
+            <p>Please Upload File (CSV or XML)</p>
+            <input type="file" id="idUploadTransaction" name="UploadTransaction" required />
+            <hr />
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Submit" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+        if (!String.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div style="text-align:center;">
+                <hr />
+                @*<p style="color:red;">@ViewBag.ErrorMessage</p>*@
+
+                @foreach (String error in ((String)ViewBag.ErrorMessage).Split(new char[] { '|' }))
+                {
+                    <p style="color:red;">@error</p>
+                }
+            </div>
+        }
+    }
+</body>
+</html>
