@@ -27,7 +27,7 @@ namespace _2C2P_Test.Controllers
             try
             {
                 if (UploadTransaction.ContentLength > 1024)
-                    throw new InvalidCastException("File size more than 1 Mb");
+                    throw new InvalidCastException("File size can not more than 1 Mb");
 
 
                 if(vMgr.validateFileType(UploadTransaction.FileName))
@@ -52,7 +52,7 @@ namespace _2C2P_Test.Controllers
                 return View();
             }
 
-            return View();
+            //return View();
         }
 
         // GET: Test2C2P/Details/5
